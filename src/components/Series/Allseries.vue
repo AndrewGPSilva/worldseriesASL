@@ -21,20 +21,9 @@
 </template>
 
 <script lang="ts">
-
-interface ISerie {
-    id: number;
-    titulo: string;
-    capa: string;
-    genero: string;
-    sinopse: string;
-    ano: number;
-    temporadas: number;
-    episodios: number;
-    classificacao: number;
-}
-
 import axios from 'axios'
+import { ISerie } from '@/interfaces/SerieInterface';
+
 export default {
     name: 'Allseries',
     data() {

@@ -1,6 +1,6 @@
 <template>
     <div v-if="serie">
-        <h1>{{ serie.titulo }}</h1>
+        <h1>{{ serie?.titulo }}</h1>    
     </div>
     <div v-else>
         <p>Carregando...</p>
