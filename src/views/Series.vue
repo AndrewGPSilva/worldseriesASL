@@ -2,7 +2,6 @@
     <div class="flex p-5">
         <Allseries />
     </div>
-    <router-link to="/">Redirect to home</router-link>
 </template>
 
 <script lang="ts">

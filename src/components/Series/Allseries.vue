@@ -9,12 +9,14 @@
         <div class="">
             <h2 class="text-2xl font-bold mb-2 text-gray-100">{{ serie.titulo }}</h2>
             <p class="text-gray-200 line-clamp-3">
-                {{ serie.sinopse  }}
+                {{ serie.sinopse }}
             </p>
         </div>
-        <router-link to="/"><button class="hover:bg-gray-700 bg-gray-800 text-gray-100 mt-6 rounded p-2 px-6">
-            Explorar
-        </button></router-link>
+        <router-link :to="'/series/' + serie.id">
+            <button class="hover:bg-gray-700 bg-gray-800 text-gray-100 font-bold mt-6 rounded p-2 px-6">
+                Explorar
+            </button>
+        </router-link>
     </div>
 </template>
 
