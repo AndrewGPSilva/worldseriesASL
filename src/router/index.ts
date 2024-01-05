@@ -3,6 +3,7 @@ import Guide from "../views/Guide.vue";
 import Dashboard from "../views/Dashboard.vue";
 import Series from "../views/Series.vue";
 import InfoSeries from "../views/InfoSeries.vue";
+import NotFound from "../views/NotFound.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,6 +27,11 @@ const router = createRouter({
       path: "/series/:id",
       name: "InfoSeries",
       component: InfoSeries,
+    },
+    {
+      path: "/:pathMatch(.*)*",
+      name: "NotFound",
+      component: NotFound,
     }
   ],
 });
