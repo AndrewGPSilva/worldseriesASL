@@ -1,6 +1,14 @@
 <template>
     <div v-if="serie">
-        <h1>{{ serie?.titulo }}</h1>    
+        <h1>{{ serie?.titulo }}</h1>
+        <img :src="serie?.capa" :alt="serie?.titulo" />
+        <p>{{ serie?.sinopse }}</p>
+        <p>{{ serie?.classificacao }}</p>
+        <p>{{ serie?.genero }}</p>
+        <p>{{ serie?.ano }}</p>
+        <p>{{ serie?.temporadas }}</p>
+        <p>{{ serie?.episodios }}</p>
+        <router-link :to="{ name: 'Guide' }">Voltar</router-link>
     </div>
     <div v-else>
         <p>Carregando...</p>
