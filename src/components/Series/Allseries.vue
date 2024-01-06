@@ -22,7 +22,7 @@
 
 <script lang="ts">
 import axios from 'axios'
-import { ISerie } from '@/interfaces/Serie';
+import { ISerie } from '../../interfaces/SerieInterface';
 
 export default {
     name: 'Allseries',

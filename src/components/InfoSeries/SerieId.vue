@@ -17,8 +17,7 @@
 
 <script lang="ts">
 import axios from 'axios'
-import { ISerie } from '@/interfaces/SerieInterface';
-
+import { ISerie } from '../../interfaces/SerieInterface';
 
 export default {
     name: "SerieId",
