@@ -1,16 +1,20 @@
 <template>
-    <div class="bg-red-400">
-        <h1 class="text-blue-700">Guide</h1>
-        <List />
-    </div>
+    <header>
+        <Navbar />
+    </header>
+    <main>
+    </main>
+    <footer>
+
+    </footer>
 </template>
 
 <script lang="ts">
-import List from '../components/Guide/List.vue'
+import Navbar from '../components/Guide/Navbar.vue'
 export default {
     name: 'Guide',
     components: {
-        'List': List
+        'Navbar': Navbar
     }
 }
 </script>
