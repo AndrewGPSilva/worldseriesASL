@@ -1,6 +1,7 @@
 <template>
-    <nav class="bg-black p-5">
+    <nav>
         <img src="../../assets/logo.jpeg" alt="Logo do Site">
+        <router-link to="/series">Series</router-link>
     </nav>
 </template>
 
