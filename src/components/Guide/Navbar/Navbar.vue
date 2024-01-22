@@ -89,7 +89,7 @@ img {
 }
 
 a {
-    color: #6b6b6b;
+    color: #8d8d8d;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
 }
