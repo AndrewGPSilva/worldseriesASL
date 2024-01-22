@@ -1,21 +1,18 @@
 <template>
-    <header>
+    <div>
         <Navbar />
-    </header>
-    <main>
-        
-    </main>
-    <footer>
-
-    </footer>
+        <Routes />
+    </div>
 </template>
 
 <script lang="ts">
 import Navbar from '../components/Guide/Navbar/Navbar.vue'
+import Routes from '../components/Guide/Routes/Routes.vue'
 export default {
     name: 'Guide',
     components: {
-        'Navbar': Navbar
+        'Navbar': Navbar,
+        'Routes': Routes
     }
 }
 </script>

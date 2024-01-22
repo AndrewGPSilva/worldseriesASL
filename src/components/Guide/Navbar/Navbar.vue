@@ -18,49 +18,49 @@
 </template>
 
 <scritp lang="ts">
-    export default {
-        name: 'Navbar',
-    }
+export default {
+    name: 'Navbar',
+}
 </scritp>
 
 <style scoped>
-    nav {
-        display: flex;
-        justify-content: space-around;
-        padding: 30px;
-        background-color: black;
-    }
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: black;
+}
 
-    .login {
-        color: orange;
-        font-size: 28px;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: bold;
-    }
+.login {
+    color: orange;
+    font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
 
-    .register {
-        color: rgb(255, 0, 0);
-        font-size: 28px;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: bold;
-    }
+.register {
+    color: rgb(255, 0, 0);
+    font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
 
-    .container-icons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }
+.container-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 
-    .container-authentication {
-        display: flex;
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
-    }
+.container-authentication {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
 
-    img {
-        width: 100px;
-        height: 100px;
-    }
+img {
+    width: 100px;
+    height: 100px;
+}
 </style>
