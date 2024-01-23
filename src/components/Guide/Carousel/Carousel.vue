@@ -1,4 +1,4 @@
-<template lang="">
+<template>
     <div class="container">
         <button @click="nextImage">
             <i class="pi pi-arrow-left" style="color: white"></i>
