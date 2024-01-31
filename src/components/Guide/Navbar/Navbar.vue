@@ -1,14 +1,21 @@
 <template>
     <nav>
         <div class="container-icons">
-            <i class="pi pi-facebook" style="color: #1877f2; font-size: 28px;"></i>
-            <i class="pi pi-instagram" style="color: #E4405F; font-size: 25px;"></i>
-            <i class="pi pi-twitter" style="color: #1DA1F2; font-size: 25px;"></i>
-            <i class="pi pi-whatsapp" style="color: #25D366; font-size: 25px;"></i>
-            <i class="pi pi-linkedin" style="color: #0077B5; font-size: 25px;"></i>
+            <a href="https://www.facebook.com/Andrew13G/" target="_blank"><i class="pi pi-facebook"
+                    style="color: #1877f2; font-size: 28px;"></i></a>
+            <a href="https://www.instagram.com/andrew_gpereira/" target="_blank"><i class="pi pi-instagram"
+                    style="color: #E4405F; font-size: 25px;"></i></a>
+            <a href="https://twitter.com/AndrewGPS13" target="_blank"><i class="pi pi-twitter"
+                    style="color: #1DA1F2; font-size: 25px;"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=5511978862185&text=Olá, vim pelo seu projeto music player."
+                target="_blank"><i class="pi pi-whatsapp" style="color: #25D366; font-size: 25px;"></i></a>
+            <a href="https://www.linkedin.com/in/andrewgpsilva/" target="_blank"><i class="pi pi-linkedin"
+                    style="color: #0077B5; font-size: 25px;"></i></a>
         </div>
-        <div>
-            <img src="../../../assets/op.png" alt="Logo do Site - Caveira da Tripulação do Luffy em One Piece">
+        <div class="logoSite">
+            <router-link to="/">
+                <img src="../../../assets/op.png" alt="Logo do Site - Caveira da Tripulação do Luffy em One Piece">
+            </router-link>
         </div>
         <div class="container-authentication">
             <button class="login">Login</button>
@@ -61,7 +68,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 5px;
 }
 
 .container-authentication {
@@ -92,5 +99,30 @@ a {
     color: #8d8d8d;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
+}
+
+i {
+    cursor: pointer;
+    padding: 5px;
+}
+
+i:hover {
+    background-color: rgb(43, 43, 43);
+    border-radius: 5px;
+}
+
+.logoSite img {
+    cursor: pointer;
+}
+
+.container a {
+    padding: 5px;
+}
+
+.container a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    text-decoration: underline;
 }
 </style>

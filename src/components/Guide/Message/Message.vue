@@ -12,8 +12,8 @@ export default {
 
 <style scoped>
 .container {
-    background-color: #1E1E1E;
-    padding: 10px;
+    background: linear-gradient(to bottom, black, #141414);
+    padding: 15px;
     font-size: 30px;
     color: rgb(255, 255, 255);
     font-family: 'Fugaz One', sans-serif;
