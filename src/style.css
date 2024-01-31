@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
 
 * {
   margin: 0px;
@@ -23,4 +24,18 @@ a {
 
 ::-webkit-scrollbar-track {
   background-color: #363636;
+}
+
+.aparicao-enter-active {
+  transition: all 1.5s ease-out;
+}
+
+.aparicao-leave-active {
+  transition: all 0.5s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.aparicao-enter-from,
+.aparicao-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
 }

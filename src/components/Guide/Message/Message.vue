@@ -14,10 +14,9 @@ export default {
 .container {
     background-color: #1E1E1E;
     padding: 10px;
-    font-size: 25px;
-    color: yellow;
-    font-weight: bold;
-    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-family: 'Fugaz One', sans-serif;
     text-align: center;
 }
 </style>

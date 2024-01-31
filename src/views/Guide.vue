@@ -3,8 +3,10 @@
         <Navbar />
     </header>
     <main>
-        <Message />
-        <Carousel />
+        <TransitionGroup name="aparicao">
+            <Message v-if="show" />
+            <Carousel v-if="show" />
+        </TransitionGroup>
     </main>
     <footer>
         <Rodape />
@@ -24,6 +26,21 @@ export default {
         'Message': Message,
         'Carousel': Carousel,
         'Rodape': Rodape
+    },
+    data() {
+        return {
+            show: false
+        }
+    },
+    mounted() {
+        console.log("montado");
+        this.animation()
+    },
+    methods: {
+        animation() {
+            console.log("certo")
+            this.show = !this.show
+        }
     }
 }
 </script>
@@ -31,5 +48,9 @@ export default {
 <style scoped>
 footer {
     background-color: #141414;
+}
+
+main {
+    background-color: black;
 }
 </style>
