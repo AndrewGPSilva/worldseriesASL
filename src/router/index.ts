@@ -1,9 +1,11 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Guide from "../views/Guide.vue";
-import Dashboard from "../views/Dashboard.vue";
-import Series from "../views/Series.vue";
-import InfoSeries from "../views/InfoSeries.vue";
 import NotFound from "../views/NotFound.vue";
+import Anime from "../views/Anime.vue";
+import Blog from "../views/Blog.vue";
+import Community from "../views/Community.vue";
+import Faq from "../views/Faq.vue";
+import Serie from "../views/Serie.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,24 +16,34 @@ const router = createRouter({
       component: Guide,
     },
     {
-      path: "/dashboard",
-      name: "Dashboard",
-      component: Dashboard,
-    },
-    {
-      path: "/series",
-      name: "Series",
-      component: Series,
-    },
-    {
-      path: "/series/:id",
-      name: "InfoSeries",
-      component: InfoSeries,
-    },
-    {
       path: "/:pathMatch(.*)*",
       name: "NotFound",
       component: NotFound,
+    },
+    {
+      path: "/anime",
+      name: "Anime",
+      component: Anime
+    },
+    {
+      path: "/serie",
+      name: "Serie",
+      component: Serie
+    },
+    {
+      path: "/faq",
+      name: "Faq",
+      component: Faq
+    },
+    {
+      path: "/blog",
+      name: "Blog",
+      component: Blog
+    },
+    {
+      path: "/community",
+      name: "Community",
+      component: Community
     }
   ],
 });

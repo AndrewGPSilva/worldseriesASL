@@ -23,12 +23,12 @@
         </div>
     </nav>
     <div class="container">
-        <router-link to="/series">HOME</router-link>
-        <router-link to="/series">ANIME</router-link>
-        <router-link to="/series">SERIE</router-link>
-        <router-link to="/series">FAQ</router-link>
-        <router-link to="/series">BLOG</router-link>
-        <router-link to="/series">COMMUNITY</router-link>
+        <router-link to="/">HOME</router-link>
+        <router-link to="/anime">ANIME</router-link>
+        <router-link to="/serie">SERIE</router-link>
+        <router-link to="/faq">FAQ</router-link>
+        <router-link to="/blog">BLOG</router-link>
+        <router-link to="/community">COMMUNITY</router-link>
     </div>
 </template>
 
