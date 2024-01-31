@@ -25,4 +25,10 @@ export default {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
 }
+
+@media (max-width: 1280px) {
+    .container p {
+        font-size: 17px;
+    }
+}
 </style>

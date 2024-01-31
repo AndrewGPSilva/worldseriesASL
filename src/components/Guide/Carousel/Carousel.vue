@@ -58,4 +58,15 @@ button {
     border-radius: 20px;
     margin: 0px 15px;
 }
+
+@media (max-width: 1280px) {
+    .container {
+        display: flex;
+        justify-content: space-around;
+    }
+    .container img {
+        width: 75%;
+        height: 100px;
+    }
+}
 </style>

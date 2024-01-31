@@ -19,4 +19,10 @@ export default {
     font-family: 'Fugaz One', sans-serif;
     text-align: center;
 }
+
+@media (max-width: 1280px) {
+    .container p {
+        font-size: 20px;
+    }
+}
 </style>

@@ -78,6 +78,14 @@ nav {
     align-items: center;
 }
 
+.container-authentication button {
+    cursor: pointer;
+}
+
+.container-authentication button:hover {
+    text-decoration: underline;
+}
+
 img {
     width: 100px;
     height: 100px;
@@ -120,9 +128,36 @@ i:hover {
 }
 
 .container a:hover {
-    background-color: white;
-    color: black;
+    background-color: #ff0000;
+    color: white;
     border-radius: 10px;
     text-decoration: underline;
+}
+
+@media (max-width: 1280px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container-icons {
+        display: none;
+    }
+
+    .logoSite img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .container-authentication button {
+        font-size: 20px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0;
+    }
 }
 </style>
